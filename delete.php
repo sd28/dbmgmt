@@ -3,15 +3,15 @@ session_start();
 if(isset($_SESSION['uname']) && isset($_GET['idd']) && isset($_GET['rid']))
 {
 	$showid=$_GET['idd'];
-	$ret="location:index.php?i=6&id=1&idd=$showid";
+	$ret="location:index.html?i=6&id=1&idd=$showid";
 }
 else
 	if((isset($_SESSION['uuname']) && isset($_GET['rid'])))
-		$ret="location:index.php?i=7&id=2";
+		$ret="location:index.html?i=7&id=2";
 else
 {
 	echo"invalid session ";
-  header("refresh:1;index.php?i=2");
+  header("refresh:1;index.html?i=2");
 }
     $rid=$_GET['rid'];
 	mysql_connect("localhost","root","");
