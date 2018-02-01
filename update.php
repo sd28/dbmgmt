@@ -2,16 +2,16 @@
 session_start();
 if(isset($_SESSION['uname']) && isset($_GET['idd']) && isset($_GET['rid']))
 {$showid=$_GET['idd'];
-	$ret="refresh:2;index.php?i=6&id=1&idd=$showid";
+	$ret="refresh:2;index.html?i=6&id=1&idd=$showid";
 }
 else
 	 if(isset($_SESSION['uuname']) && isset($_GET['rid']))
 	 {
-		 $ret="refresh:2;index.php?i=7&id=1";
+		 $ret="refresh:2;index.html?i=7&id=1";
 	 }
 else
 {echo"invalid session ";
-  header("refresh:1;index.php?i=2");
+  header("refresh:1;index.html?i=2");
 }
 
 	
