@@ -2,12 +2,12 @@
 session_start();
 if(isset($_SESSION['uname']))
 {
-	header("location:index.php?i=6");
+	header("location:index.html?i=6");
 }
 else
 	if(isset($_SESSION['uuname']))
 	{
-		header("location:index.php?i=7");
+		header("location:index.html?i=7");
 	}
 ?>
 <?php
@@ -40,14 +40,14 @@ else
 			{$_SESSION['uname']=$_POST['unam'];
 			$_SESSION['upass']=$_POST['upas'];
 			echo "Login Success";
-			header("refresh:1;index.php?i=6");
+			header("refresh:1;index.html?i=6");
 			}
 			else
 			{
 				$_SESSION['uuname']=$_POST['unam'];
 			$_SESSION['uupass']=$_POST['upas'];
 			echo "Login Success";
-			header("refresh:1;index.php?i=7");
+			header("refresh:1;index.html?i=7");
 			}
 			
 			
