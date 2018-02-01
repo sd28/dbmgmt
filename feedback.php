@@ -49,7 +49,7 @@ $totpages=ceil(count(@$names)/3);
 <?php
  for($i=1;$i<=$totpages;$i++)
  {
-	 echo "<a href='index.php?i=6&id=3&fid=$i'>".$i."</a>"."\t \t \t \t ";
+	 echo "<a href='index.html?i=6&id=3&fid=$i'>".$i."</a>"."\t \t \t \t ";
  }
 ?>
 </div>
