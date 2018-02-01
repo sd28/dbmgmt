@@ -7,7 +7,7 @@ else
 		echo"LOGGING OUT USER:".$_SESSION['uuname'];
 session_destroy();
 
-header("refresh:2;index.php?i=2");
+header("refresh:2;index.html?i=2");
 
 
 ?>
