@@ -21,8 +21,8 @@ if(isset($_SESSION['uuname']))
 <center>
 <table border="2">
 
-<tr><th><a href="index.php?i=7&id=1">SHOW</a></th></tr>
-<tr><th><a href="index.php?i=7&id=2">LOGOUT</a></th></tr>
+<tr><th><a href="index.html?i=7&id=1">SHOW</a></th></tr>
+<tr><th><a href="index.html?i=7&id=2">LOGOUT</a></th></tr>
 </table>
 </center>
 </div>
@@ -71,7 +71,7 @@ if(isset($_SESSION['uuname']))
 else
 {
 	echo "Error.. Please Login First";
-	header("refresh:2;index.php?i=2");
+	header("refresh:2;index.html?i=2");
 }
 ?>
 
